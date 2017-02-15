@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Antenna-Bold", Arial, Helvetica, "Microsoft YaHei", "Î¢ÈíÑÅºÚ", "STXihei", "»ªÎÄÏ¸ºÚ", "SimSun", "ËÎÌå", sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header_wrap{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 9999;
+    background: white;
+    transition: 0.5s;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .3);
+}
+.header{
+    width: 1200px;
+    height: 70px;
+    /*background: yellowgreen;*/
+    left: 50%;
+    margin-left: -600px;
+    position: absolute;
+
+}
+.logo{
+    position: relative;
+    top: 8px;
+    float: left;
+}
+
+.header_nav{
+    float: left;
+    height: 70px;
+    margin-left: 80px;
+    position: relative;
+}
+.header_nav ul{
+    width: 700px;
+
+    position: absolute;
+}
+.header_nav ul li{
+    float: left;
+    /*margin-left: 10px;*/
+    height: 60px;
+    padding: 0px 20px;
+    line-height: 70px;
+    color: #333333;
+}
+/*.header_nav ul li:hover{*/
+    /*color: #E6483A ;*/
+/*}*/
+.gang{
+    width: 32px;
+    height: 5px;
+    background: #E6483A;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+.now1{
+    color: #E6483A !important;
+}
+.now2{
+    color: #E6483A !important;
+}
+.header_tel{
+    float: right;
+    width: 250px;
+    height: 70px;
+    line-height: 70px;
+    /*background: powderblue;*/
+    text-align: right;
+}
+.JLT{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url("../img/tel_bg.png") no-repeat;
+    vertical-align: middle;
+}
+
+.header_tel p{
+    font-weight: bold;
+    color: #E6483A;
+    font-size: 25px;
+    letter-spacing:3px;
+}
+
+.CeBianLan{
+    width: 50px;
+    height: 162px;
+    position: fixed;
+    top: 50%;
+    margin-top: -81px;
+    right: 0px;
+    z-index: 999;
+}
+
+.cbl_one{
+    width: 50px;
+    height: 50px;
+    background: #000022;
+    border-radius: 3px;
+    position: absolute;
+    right: 0;
+    transition:  .3s;
+    overflow: hidden;
+    line-height: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: white;
+}
+.cbl_one p{
+    position: absolute;
+}
+
+@keyframes suofang{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.cbl_one_img{
+    float: right;
+}
+.cbl_one:hover .cbl_one_img{
+    animation: suofang .3s;
+}
+
+
+.CeBianLan2{
+    width: 35px;
+    height: 70px;
+    background: saddlebrown;
+    position: fixed;
+    top: 75%;
+    right: 15px;
+    z-index: 999;
+}
+.cbl_two{
+    width: 35px;
+    height: 35px;
+    background:#e4392a url("../img/r_icon1.png") no-repeat center;
+}
+.cbl_three{
+    background:#e4392a url("../img/r_icon2.png") no-repeat center;
+}
+
+.cbl_two:hover{
+    background:#000022 url("../img/r_icon1.png") no-repeat center;
+}
+.cbl_three:hover{
+    background:#000022 url("../img/r_icon2.png") no-repeat center;
+}
+
+.cbl_two_ewm{
+    width: 141px;
+    height: 0px;
+    background: url("../img/ewm.jpg") no-repeat;
+    position: absolute;
+    top: -70px;
+    left: -150px;
+}
